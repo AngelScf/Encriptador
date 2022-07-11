@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <title>Encriptador Alura</title>
+</head>
+<header class="header_0">
+    <nav class="navContainer">
+        <img src="img/logo.jpg" alt="Image not found" class="nav-imagen">
+    </nav>
+</header>
+
+<body>
+    <main class="main-container">
+        <div class="text_div0">
+            <div class="text_div1">
+                <textarea id="textodato" class="textcard" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="textcard textfinal">
+            </div>
+        </div>
+        <div class="espacio" id="alert"></div>
+        <div class="containerBotones">
+            <button id="encript" class="botones" onclick="encriptar()">Encriptar</button>
+            <button id="desencript" class="botones" onclick="inversa()">Desencriptar</button>
+            <button id="borrar" class="botones" onclick="borrar()">Borrar</button>
+            <button id="copiar" class="botones" onclick="copyToClickBoard()">Copiar resultado</button>
+        </div>
+    </main>
+</body>
+<footer class="footer">
+    <nav>
+        <div class="footer-container">
+            <ul class="lista">
+                <li><a href="https://github.com/AngelScf" target="_blank"><img src="img/github.png" alt="GitHub" class="footer-img"></a></li>
+                <li><a href="https://twitter.com/PaulaV606" target="_blank"><img src="img/twitter.png" alt="twitter" class="footer-img"></a></li>
+                <li><a href="https://www.linkedin.com/in/paula-villegas-34b2a8209/" target="_blank"><img src="img/linkedin.png" alt="Linkedin" class="footer-img"></a></li>
+                <li><a href="https://www.instagram.com/sn4ke_66/" target="_blank"><img src="img/instagram.png" alt="instagram" class="footer-img"></a></li>
+            </ul>
+            <ul>
+                <li><p class="firma">Diseñado por Paula Villegas</p></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="js/logic.js"></script>
+
+</html>

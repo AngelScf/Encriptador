@@ -1,0 +1,156 @@
+:root {
+    --fuente: font-family: 'Montserrat', sans-serif;
+    --azul1: #015c92;
+    --azul2: #2d82b5;
+    --azul3: #53a7d8;
+    --lblue: #88cdf6;
+    --lblue2: #bce6ff;
+    --darkblue: rgb(0, 38, 59) 97%;
+}
+.header_0{
+    background: linear-gradient(180deg, rgba(45, 130, 181, 1) 18%, rgba(1, 92, 146, 1) 97%);
+}
+.navContainer{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-imagen{
+    width: 5%;
+    border: #ffff 2px solid;
+    border-radius: 50%;
+    margin: 0.8rem 2rem;
+}
+/**------------BODY-------------**/
+.main-container{
+    background-color: var(--lblue2);
+}
+.text_div0{
+    height: 30rem;  
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+}
+.textcard{
+    width: 30rem;
+    height: 24rem;
+    outline: none;
+    resize: none;
+    padding: 1.5rem 1rem 0;
+    border: #bce6ff 1px solid;
+    border-radius: 5%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.textfinal{
+    background-color:var(--azul2);
+}
+
+/**------------Botones------------**/
+.containerBotones{
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.botones{
+    width: 8rem;
+    height: 3.5rem;
+    background: var(--azul2);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: var(--lblue2) 0 none;
+    border-radius: 10%;
+} 
+
+.botones:hover {
+    background: var(--azul1);
+    cursor: pointer;
+    transition: 1s;
+    border-bottom: 5px solid var(--darkblue);
+}
+
+.botones:active {
+    background: var(--azul3);
+}
+
+/*----------footer------------*/
+
+.footer{
+    height: 6.6rem;
+    background-color: var(--azul2);
+}
+.footer-container{
+    width: 55,25rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lista{
+    width: 20rem;
+    display:flex;
+    justify-content: space-around;
+}
+.footer-img{
+    width: 2.5rem;
+}
+.firma{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    color: rgba(1, 79, 147, 1);
+}
+
+/*--------------------Responsive------------------------------*/
+
+@media screen and (max-width:1050px){
+    .main-container{
+        height: 40em;
+    }
+    .textcard{
+        width: 27rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-width:950px) {
+    .textcard{
+        margin: 0 1rem;
+        width: 80%;
+    }
+    .textfinal{
+        margin-left: 1.5rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .navContainer{
+        height: 6rem;
+    }
+    .nav-imagen{
+        width: 18%;
+    }
+    .main-container{
+        height: 45em;
+    }
+    .text_div0{
+        flex-wrap:wrap;
+    }
+    .textcard{
+        width: 15rem;
+        height: 12rem;
+    }
+    .containerBotones{
+        flex-wrap: wrap;
+    }
+    .botones{
+        margin: 1rem;
+    } 
+    .footer-img{
+        width: 2rem;
+    }
+    .firma{
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+}
